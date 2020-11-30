@@ -1,0 +1,3 @@
+use kr1
+select personality.name as имя, personality.surname as фамилия, personality.patronymic as очество, passport.adress as 'адрес проживания', passport.series_namber as 'серия и номер' from personality, passport
+where personality.id_personality= passport.id_personality;

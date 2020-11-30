@@ -1,0 +1,11 @@
+use kr1
+create table passport (
+[id_passport] int primary key identity (1, 1),
+[id_personality] INT not null,
+[series_namber] VARCHAR(20) not null,
+[issued_by] VARCHAR (max)  not null,
+[date_of_issue] DATE not null,
+[departament_code] VARCHAR(20) not null,
+[sex] VARCHAR (10) not null,
+[adress] VARCHAR (max) not null,
+);

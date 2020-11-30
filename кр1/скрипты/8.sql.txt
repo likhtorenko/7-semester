@@ -1,0 +1,4 @@
+use kr1
+update passport  
+set passport.sex = 'женский' passport.date_of_issue = '04.11.2020', passport.departament_code = '780-210', passport.series_namber = '8458387595', passport.issued_by = 'ТП № 6 межр ОУФМС россии по МО в гор поселении Сколково', passport.adress = 'обл. Московская, г. Москва, пр-кт. Мира, д. 31'
+where passport.id_personality = '12';

@@ -1,0 +1,8 @@
+use kr1
+create table personality (
+[id_personality] int primary key identity (1, 1),
+[name] VARCHAR (50) not null,
+[surname] VARCHAR (100) not null,
+[patronymic] VARCHAR (100),
+[date_of_birth] DATE not null,
+);

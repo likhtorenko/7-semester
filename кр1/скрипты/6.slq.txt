@@ -1,0 +1,6 @@
+use kr1
+alter table passport
+add constraint FK_passport_id_passport foreign key(id_personality)
+references personality(id_personality)      
+on update cascade
+on delete cascade;

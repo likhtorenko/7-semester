@@ -1,0 +1,12 @@
+use kr1
+
+insert personality values ('казырбек','жылызыбыкович', 'ахметович', '05.05.1998')
+insert personality values ('илья','коковин', '', '14.12.1968')
+insert personality values ('алонсе','алонсе', 'алонсе', '28.10.1999')
+insert personality values ('дарья','щавелева', '', '05.05.1998')
+insert personality values ('алина','торшина', '', '07.07.2007')
+insert personality values ('михаил','сиваков', 'сергеевич', '14.06.1967')
+insert personality values ('чинар','дайырбек кызы', '', '24.03.1986')
+insert personality values ('асад','юлдашев', '', '11.02.1987')
+insert personality values ('элзар','акматов', 'романович', '14.09.1962')
+insert personality values ('ксения','бобина', 'алексеевна', '17.09.1962')
