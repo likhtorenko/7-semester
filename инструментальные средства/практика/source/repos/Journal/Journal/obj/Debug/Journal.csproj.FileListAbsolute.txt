@@ -1,0 +1,10 @@
+C:\Users\llikh\source\repos\Journal\Journal\bin\Debug\Journal.exe.config
+C:\Users\llikh\source\repos\Journal\Journal\bin\Debug\Journal.exe
+C:\Users\llikh\source\repos\Journal\Journal\bin\Debug\Journal.pdb
+C:\Users\llikh\source\repos\Journal\Journal\obj\Debug\Journal.csprojAssemblyReference.cache
+C:\Users\llikh\source\repos\Journal\Journal\obj\Debug\Journal.authorization.resources
+C:\Users\llikh\source\repos\Journal\Journal\obj\Debug\Journal.Properties.Resources.resources
+C:\Users\llikh\source\repos\Journal\Journal\obj\Debug\Journal.csproj.GenerateResource.cache
+C:\Users\llikh\source\repos\Journal\Journal\obj\Debug\Journal.csproj.CoreCompileInputs.cache
+C:\Users\llikh\source\repos\Journal\Journal\obj\Debug\Journal.exe
+C:\Users\llikh\source\repos\Journal\Journal\obj\Debug\Journal.pdb
