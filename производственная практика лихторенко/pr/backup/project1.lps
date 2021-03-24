@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="40"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="87"/>
+        <CursorPos X="32" Y="13"/>
+        <UsageCount Value="40"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="udm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="73"/>
+        <CursorPos X="3" Y="75"/>
+        <UsageCount Value="40"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\addCompons\ibx\runtime\IBMessages.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="385"/>
+        <CursorPos Y="410"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\addCompons\ibx\runtime\nongui\IBDatabase.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="1172"/>
+        <CursorPos X="6" Y="1184"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\lazarus\addCompons\ibx\runtime\nongui\IBCustomDataSet.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="4395"/>
+        <CursorPos Y="4402"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\addCompons\ibx\fbintf\client\FBClientAPI.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="321"/>
+        <CursorPos Y="343"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="udm.pas"/>
+        <Caret Line="100" Column="3" TopLine="71"/>
+      </Position1>
+      <Position2>
+        <Filename Value="udm.pas"/>
+        <Caret Line="99" Column="3" TopLine="70"/>
+      </Position2>
+      <Position3>
+        <Filename Value="udm.pas"/>
+        <Caret Line="98" Column="3" TopLine="69"/>
+      </Position3>
+      <Position4>
+        <Filename Value="udm.pas"/>
+        <Caret Line="99" Column="3" TopLine="70"/>
+      </Position4>
+      <Position5>
+        <Filename Value="udm.pas"/>
+        <Caret Line="100" Column="3" TopLine="71"/>
+      </Position5>
+      <Position6>
+        <Filename Value="udm.pas"/>
+        <Caret Line="101" Column="3" TopLine="72"/>
+      </Position6>
+      <Position7>
+        <Filename Value="udm.pas"/>
+        <Caret Line="102" Column="3" TopLine="73"/>
+      </Position7>
+      <Position8>
+        <Filename Value="udm.pas"/>
+        <Caret Line="101" Column="3" TopLine="72"/>
+      </Position8>
+      <Position9>
+        <Filename Value="udm.pas"/>
+        <Caret Line="100" Column="3" TopLine="71"/>
+      </Position9>
+      <Position10>
+        <Filename Value="udm.pas"/>
+        <Caret Line="99" Column="3" TopLine="70"/>
+      </Position10>
+      <Position11>
+        <Filename Value="udm.pas"/>
+        <Caret Line="100" Column="3" TopLine="71"/>
+      </Position11>
+      <Position12>
+        <Filename Value="udm.pas"/>
+        <Caret Line="101" Column="3" TopLine="72"/>
+      </Position12>
+      <Position13>
+        <Filename Value="udm.pas"/>
+        <Caret Line="102" Column="3" TopLine="73"/>
+      </Position13>
+      <Position14>
+        <Filename Value="udm.pas"/>
+        <Caret Line="101" Column="3" TopLine="72"/>
+      </Position14>
+      <Position15>
+        <Filename Value="udm.pas"/>
+        <Caret Line="100" Column="3" TopLine="71"/>
+      </Position15>
+      <Position16>
+        <Filename Value="udm.pas"/>
+        <Caret Line="99" Column="3" TopLine="70"/>
+      </Position16>
+      <Position17>
+        <Filename Value="udm.pas"/>
+        <Caret Line="98" Column="3" TopLine="69"/>
+      </Position17>
+      <Position18>
+        <Filename Value="udm.pas"/>
+        <Caret Line="97" Column="3" TopLine="68"/>
+      </Position18>
+      <Position19>
+        <Filename Value="udm.pas"/>
+        <Caret Line="98" Column="3" TopLine="69"/>
+      </Position19>
+      <Position20>
+        <Filename Value="udm.pas"/>
+        <Caret Line="99" Column="3" TopLine="70"/>
+      </Position20>
+      <Position21>
+        <Filename Value="udm.pas"/>
+        <Caret Line="100" Column="3" TopLine="71"/>
+      </Position21>
+      <Position22>
+        <Filename Value="udm.pas"/>
+        <Caret Line="101" Column="3" TopLine="72"/>
+      </Position22>
+      <Position23>
+        <Filename Value="udm.pas"/>
+        <Caret Line="102" Column="3" TopLine="73"/>
+      </Position23>
+      <Position24>
+        <Filename Value="udm.pas"/>
+        <Caret Line="75" Column="3" TopLine="73"/>
+      </Position24>
+      <Position25>
+        <Filename Value="udm.pas"/>
+        <Caret Line="74" Column="3" TopLine="72"/>
+      </Position25>
+      <Position26>
+        <Filename Value="udm.pas"/>
+        <Caret Line="73" Column="3" TopLine="71"/>
+      </Position26>
+      <Position27>
+        <Filename Value="udm.pas"/>
+        <Caret Line="72" Column="3" TopLine="70"/>
+      </Position27>
+      <Position28>
+        <Filename Value="udm.pas"/>
+        <Caret Line="73" Column="3" TopLine="71"/>
+      </Position28>
+      <Position29>
+        <Filename Value="udm.pas"/>
+        <Caret Line="74" Column="3" TopLine="72"/>
+      </Position29>
+      <Position30>
+        <Filename Value="udm.pas"/>
+        <Caret Line="75" Column="3" TopLine="73"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

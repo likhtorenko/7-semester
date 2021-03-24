@@ -1,0 +1,271 @@
+object dm: Tdm
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 524
+  HorizontalOffset = 432
+  VerticalOffset = 264
+  Width = 722
+  PPI = 120
+  object ibdb: TIBDatabase
+    Connected = True
+    LoginPrompt = False
+    CreateIfNotExists = False
+    AllowStreamedConnected = True
+    DatabaseName = '127.0.0.1:D:\kurr\CINEMA.FDB'
+    Params.Strings = (
+      'user_name=sysdba'
+      'lc_ctype=WIN1251'
+      'password=masterkey'
+    )
+    DefaultTransaction = ibtr
+    IdleTimer = 0
+    TraceFlags = []
+    UseDefaultSystemCodePage = False
+    left = 592
+    top = 64
+  end
+  object ibtr: TIBTransaction
+    Active = True
+    DefaultDatabase = ibdb
+    left = 336
+    top = 64
+  end
+  object ibWorkers: TIBTable
+    AllowAutoActivateTransaction = True
+    Database = ibdb
+    Transaction = ibtr
+    BufferChunks = 1000
+    CachedUpdates = False
+    DataSetCloseAction = dcDiscardChanges
+    EnableStatistics = False
+    GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
+    TableName = 'WORKERS'
+    left = 512
+    top = 64
+    object ibWorkersID: TIBIntegerField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ibWorkersNAME: TIBStringField
+      DisplayLabel = 'Фамилия Имя Отчество'
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 250
+    end
+    object ibWorkersPOST: TIBStringField
+      DisplayLabel = 'Должность'
+      FieldKind = fkData
+      FieldName = 'POST'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+    object ibWorkersPAY: TIBBCDField
+      DisplayLabel = 'Зарплата'
+      FieldKind = fkData
+      FieldName = 'PAY'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Precision = 18
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+  end
+  object dtsWorkers: TDataSource
+    DataSet = ibWorkers
+    OnDataChange = dtsWorkersDataChange
+    left = 424
+    top = 64
+  end
+  object ibTimetable: TIBTable
+    AllowAutoActivateTransaction = True
+    Database = ibdb
+    Transaction = ibtr
+    BufferChunks = 1000
+    CachedUpdates = False
+    DataSetCloseAction = dcDiscardChanges
+    EnableStatistics = False
+    GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
+    TableName = 'TIMETABLE'
+    left = 232
+    top = 64
+    object ibTimetableNAME: TIBStringField
+      DisplayLabel = 'название фильма'
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 250
+    end
+    object ibTimetableNAMBER: TIBIntegerField
+      DisplayLabel = 'номер зала'
+      FieldKind = fkData
+      FieldName = 'NAMBER'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ibTimetableSESSION_TIME: TTimeField
+      DisplayLabel = 'время киносеанса'
+      FieldKind = fkData
+      FieldName = 'SESSIONTIME'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+  end
+  object dtsTimetable: TDataSource
+    DataSet = ibTimetable
+    OnDataChange = dtsTimetableDataChange
+    left = 120
+    top = 64
+  end
+  object ibkdm: TIBTable
+    AllowAutoActivateTransaction = True
+    Database = ibdb
+    Transaction = ibtr
+    BufferChunks = 1000
+    CachedUpdates = False
+    DataSetCloseAction = dcDiscardChanges
+    EnableStatistics = False
+    GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
+    TableName = 'KDM'
+    left = 336
+    top = 152
+    object ibkdmID: TIBIntegerField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ibkdmID_FILM_PROJECTOR: TIBIntegerField
+      DisplayLabel = 'ID кинопроектора'
+      FieldKind = fkData
+      FieldName = 'ID_FILM_PROJECTOR'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ibkdmAMOUNT: TIBIntegerField
+      DisplayLabel = 'м. кол-во билетов'
+      FieldKind = fkData
+      FieldName = 'AMOUNT'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ibkdmTIME: TTimeField
+      DisplayLabel = 'время показа'
+      FieldKind = fkData
+      FieldName = 'TIME'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ibkdmNAME: TIBStringField
+      DisplayLabel = 'название'
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 250
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ibkdm
+    OnDataChange = DataSource1DataChange
+    left = 264
+    top = 152
+  end
+  object ibfilm: TIBTable
+    AllowAutoActivateTransaction = True
+    Database = ibdb
+    Transaction = ibtr
+    BufferChunks = 1000
+    CachedUpdates = False
+    DataSetCloseAction = dcDiscardChanges
+    EnableStatistics = False
+    GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
+    TableName = 'MOVIE'
+    left = 336
+    top = 232
+    object ibfilmNAME: TIBStringField
+      DisplayLabel = 'название'
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 250
+    end
+    object ibfilmDURATION: TTimeField
+      DisplayLabel = 'продолжительность'
+      FieldKind = fkData
+      FieldName = 'DURATION'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ibfilmGENRE: TIBStringField
+      DisplayLabel = 'жанр'
+      FieldKind = fkData
+      FieldName = 'GENRE'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 250
+    end
+  end
+  object dtsfilm: TDataSource
+    DataSet = ibfilm
+    left = 392
+    top = 232
+  end
+end
